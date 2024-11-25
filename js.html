@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<title>Java Script</title>
+</head>
+<body>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+let array1 = ["Desenvolvimento de sistemas I","Programação Web I","Lógica e Algorítmo","Auditoria de sistemas","Desenvolvimento Gráfico"];
+let array2 = ["Matéria1","Matéria2","Matéria3","Matéria4","Matéria5","Matéria6"];
+
+array1[2] = "Matéria alternativa"; 
+
+let tudojunto = array1.concat(array2);
+
+document.getElementById("demo1").innerHTML = "Array1 após alteração: " + array1;
+
+document.getElementById("demo2").innerHTML = "Array2: " + array2;
+
+let text1 = array1.length;
+document.write("Tamanho de array1: " + text1 + "<br>");
+
+let text2 = array2.length;
+document.write("Tamanho de array2: " + text2 + "<br>");
+
+document.getElementById("demo1").innerHTML += "<br> Array1 + Array2: " + tudojunto;
+let text = tudojunto.length;
+document.write("Tamanho do array combinado (tudo junto): " + text);
+
+</script>
+</body>
+</html>
